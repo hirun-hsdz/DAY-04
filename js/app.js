@@ -113,12 +113,25 @@
 
 // Arrow function with single parameter
 
-let txtValue = txtValue => {
-    return txtValue;
-}
-console.log(txtValue("Hello")); // Hello 
+// let txtValue = txtValue => {
+//     return txtValue;
+// }
+// console.log(txtValue("Hello")); // Hello 
 
-//Arrow function with single parameter - short hand
+// //Arrow function with single parameter - short hand
 
-let txtValue2 = txtValue2 => txtValue2;
-console.log(txtValue2("Hello")); // Hello
+// let txtValue2 = txtValue2 => txtValue2;
+// console.log(txtValue2("Hello")); // Hello hirun ridenw hirun
+
+
+//shorting arrsy of objects
+
+const leterList  = ["D","A","C","B","E","F"];
+console.log(leterList); // ["D","A","C","B","E","F"]
+
+const sortedList = leterList.sort();
+console.log(sortedList); // ["A","B","C","D","E","F"]
+
+
+
+
