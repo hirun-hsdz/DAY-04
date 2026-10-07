@@ -38,14 +38,25 @@
 
 // customerList.=["sunil"];
 
+// const number =  [];
+
+// number.push(1);
+// console.log(number); // [1]
+
+// number.push(2);
+// console.log(number); // [1,2]
+
 const number =  [];
 
 number.push(1);
-console.log(number); // [1]
-
 number.push(2);
-console.log(number); // [1,2]
+number.push(3);
+number.push(4);
+number.push(5);
+console.log(number); // [1,2,3,4,5]
 
+number.reverse();
+console.log(number); // [5,4,3,2,1]
 
 
 
