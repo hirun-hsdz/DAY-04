@@ -90,23 +90,30 @@
 
 //1 method
 
-function addNumbers(num1,num2){
-    return num1 + num2;
-}
-console.log(addNumbers(10,20)); // 30
+// function addNumbers(num1,num2){
+//     return num1 + num2;
+// }
+// console.log(addNumbers(10,20)); // 30
 
-//2 method
-let getSum = function(num1,num2){
-    return num1 + num2;
-}
+// //2 method
+// let getSum = function(num1,num2){
+//     return num1 + num2;
+// }
 
-//3 method
-let getTotal = (num1,num2) => {
-    return num1 + num2;
-}
-console.log(getTotal(10,20)); // 30
+// //3 method
+// let getTotal = (num1,num2) => {
+//     return num1 + num2;
+// }
+// console.log(getTotal(10,20)); // 30
 
-//4 method - anonymous function
-(num1,num2) => {
-    return num1 + num2;
+// //4 method - anonymous function
+// (num1,num2) => {
+//     return num1 + num2;
+// }
+
+// Arrow function with single parameter
+
+let txtValue = txtValue => {
+    return txtValue;
 }
+console.log(txtValue("Hello")); // Hello 
