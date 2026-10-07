@@ -126,11 +126,21 @@
 
 //shorting arrsy of objects
 
-const leterList  = ["D","A","C","B","E","F"];
-console.log(leterList); // ["D","A","C","B","E","F"]
+// const leterList  = ["D","A","C","B","E","F"];
+// console.log(leterList); // ["D","A","C","B","E","F"]
 
-const sortedList = leterList.sort();
-console.log(sortedList); // ["A","B","C","D","E","F"]
+// const sortedList = leterList.sort();
+// console.log(sortedList); // ["A","B","C","D","E","F"]
+
+
+//map
+const salaryList = [50000, 60000, 70000, 80000, 90000];
+console.log(salaryList); // [50000, 60000, 70000, 80000, 90000]
+
+const updatedSalaryList = salaryList.map(salary => salary * 2);
+console.log(updatedSalaryList); // [100000, 120000, 140000, 160000, 180000]
+
+
 
 
 
