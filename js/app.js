@@ -30,6 +30,12 @@
 //customerList =("sunil");
 //console.log(customerList); // ["saman","nimal","kamal","sunil"]
 
+const customerList = ["saman","nimal","kamal"];
+console.log(customerList); // ["saman","nimal","kamal"]
+
+customerList.push("sunil");
+console.log(customerList); // ["saman","nimal","kamal","sunil"]
+
 
 
 
