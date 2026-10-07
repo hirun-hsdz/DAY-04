@@ -134,12 +134,25 @@
 
 
 //map
-const salaryList = [50000, 60000, 70000, 80000, 90000];
-console.log(salaryList); // [50000, 60000, 70000, 80000, 90000]
+// const salaryList = [50000, 60000, 70000, 80000, 90000];
+// console.log(salaryList); // [50000, 60000, 70000, 80000, 90000]
 
-const updatedSalaryList = salaryList.map(salary => salary * 2);
-console.log(updatedSalaryList); // [100000, 120000, 140000, 160000, 180000]
+// const updatedSalaryList = salaryList.map(salary => salary * 2);
+// console.log(updatedSalaryList); // [100000, 120000, 140000, 160000, 180000]
 
+
+//find method
+
+const studentList = [
+    {name: "saman", age: 20, gender: "male"},
+    {name: "nimal", age: 25, gender: "male"},
+    {name: "kamal", age: 30, gender: "male"},
+    {name: "sunil", age: 35, gender: "male"},
+    {name: "kumar", age: 40, gender: "male"},
+];
+
+const student = studentList.find(student => student.age === 30);
+console.log(student); // {name: "kamal", age: 30, gender: "male"}
 
 
 
