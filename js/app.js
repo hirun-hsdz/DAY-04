@@ -68,16 +68,15 @@ const productsList = [
     {name: "cheese", inStock: true, price: 500},
 ];
 
-conole .log(productsList); // [{name: "bun", inStock: true, price: 100}, {name: "bread", inStock: false, price: 200}, {name: "milk", inStock: true, price: 300}, {name: "egg", inStock: false, price: 400}, {name: "cheese", inStock: true, price: 500}]
+conole .log(productsList); 
 
 let inStockProducts = productsList.filter(
     function(product){
-        return product.inStock === true;
+        return productFilter (product)
     }
 );
-function filterInStockProducts(product){
+function productFilter(product){
     return product.inStock === true;
 }
 
-console.log(inStockProducts); // [{name: "bun", inStock: true, price: 100}, {name: "milk", inStock: true, price: 300}, {name: "cheese", inStock: true, price: 500}]
-
+console.log(inStockProducts); 
