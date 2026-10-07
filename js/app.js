@@ -1,160 +1,197 @@
-//console.log("Hello");
+// console.log("hello");
 
-//let , var , const
 
-//{
-  //  var name = "Hirun";
-  //  let age = 20;
 
-  //  console.log(age); // 20
+// let , var , const
 
-//}
-//console.log(name); // Hirun
-//console.log(age); // 20
+// {
+//     var name = "John";
+//     let age = 30;
 
-//let age =30;
-//console.log(age); // 30
+//     console.log(age);
+    
+// }
 
-//age =25;
-//console.log(age); // 25
+// console.log(name);
+// console.log(age);
 
-//const number = "1";
-//console.log(number); // 123
 
-//number = "2"; // TypeError: Assignment to constant variable.
-//console.log(number); // 123
+//const 
 
-//let customerList = ["saman","nimal","kamal"];
-//console.log(customerList); // ["saman","nimal","kamal"]
+// let age = 30;
+// console.log(age);
 
-//customerList =("sunil");
-//console.log(customerList); // ["saman","nimal","kamal","sunil"]
+// age = 25;
+// console.log(age);
 
-//const customerList = ["saman","nimal","kamal"];
-//console.log(customerList); // ["saman","nimal","kamal"]
+// const number = 1;
+// console.log(number);
 
-// customerList.push("sunil");
-// console.log(customerList); // ["saman","nimal","kamal","sunil"]
+// number = 2;
+// console.log(number);
 
-// customerList.=["sunil"];
 
-// const number =  [];
+// arrys - const
 
-// number.push(1);
-// console.log(number); // [1]
+// let custoemrList = ["Saman", "Nimal", "Kamal"];
+// console.log(custoemrList);
 
-// number.push(2);
-// console.log(number); // [1,2]
+// custoemrList = "Kumara";
+// console.log(custoemrList);
 
-// const number =  [];
+// const custoemrList = ["Saman", "Nimal", "Kamal"];
+// console.log(custoemrList);
+
+// custoemrList.push("Kumara");
+
+
+// -- array methods ------------
+
+// const number = [];
 
 // number.push(1);
 // number.push(2);
 // number.push(3);
 // number.push(4);
 // number.push(5);
-// console.log(number); // [1,2,3,4,5]
-
+// console.log(number);
 // number.reverse();
-// console.log(number); // [5,4,3,2,1]
+// console.log(number);
+
 
 //filter
 
-// const productsList = [
-//     {name: "bun", inStock: true, price: 100},
-//     {name: "bread", inStock: false, price: 200},
-//     {name: "milk", inStock: true, price: 300},
-//     {name: "egg", inStock: false, price: 400},
-//     {name: "cheese", inStock: true, price: 500},
+// const productList = [
+//     {name:"bun", inStock:true, price: 100},
+//     {name:"milk", inStock:true, price: 200},
+//     {name:"egg", inStock:false, price: 300},
+//     {name:"bread", inStock:true, price: 400},
+//     {name:"butter", inStock:false, price: 500},
 // ];
 
-// // conole .log(productsList); 
+// console.log(productList);
 
-// // let inStockProducts = productsList.filter(
-// //     function(product){
-// //         return productFilter (product)
-// //     }
-// // );
-// // function productFilter(product){
-// //     return product.inStock === true;
-// // }
-
-// // console.log(inStockProducts); 
-
-
-// let inStockProducts =
-//     productsList.filter(product => product.inStock == true);
-        
-
-//     console.log(inStockProducts);
-
-//1 method
-
-// function addNumbers(num1,num2){
-//     return num1 + num2;
-// }
-// console.log(addNumbers(10,20)); // 30
-
-// //2 method
-// let getSum = function(num1,num2){
-//     return num1 + num2;
+//1st step
+// let inStockProducts = productList.filter(
+//     function(product){ //product = {name:"bun", inStock:true, price: 100} , 
+//         return productFilter(product);
+       
+//     }
+// );
+// function productFilter(product){
+//     return product.inStock == true;
 // }
 
-// //3 method
-// let getTotal = (num1,num2) => {
+// console.log(inStockProducts);
+
+
+// 2nd step
+
+// let inStockProducts = productList.filter(
+//     function(product){ //product = {name:"bun", inStock:true, price: 100} , 
+//         return product.inStock == true;
+       
+//     }
+// );
+
+
+// console.log(inStockProducts);
+
+
+// 3rd step
+
+// let inStockProducts = 
+//     productList.filter(product => product.inStock == true);
+
+
+// console.log(inStockProducts);
+
+
+// functions 
+
+// - 1 method
+
+// function addNumbers(num1, num2){
 //     return num1 + num2;
 // }
-// console.log(getTotal(10,20)); // 30
 
-// //4 method - anonymous function
-// (num1,num2) => {
+// console.log(addNumbers(5, 10));
+
+// // - 2 method
+// let getSum = function(num1, num2){
+//     return num1 + num2;
+// }
+// console.log(getSum(5, 10));
+
+// //- 3 method -  arrow function
+// let getTotal = (num1, num2) => {
+//     return num1 + num2;
+// }
+// console.log(getTotal(5, 10));
+
+// //-4 method - anonymous arrow function
+// (num1, num2) => {
 //     return num1 + num2;
 // }
 
-// Arrow function with single parameter
 
-// let txtValue = txtValue => {
+// // Arrow function with single parameter
+// let txtValue = txtValue =>{
 //     return txtValue;
 // }
-// console.log(txtValue("Hello")); // Hello 
+// console.log(txtValue("Hello World"));
 
-// //Arrow function with single parameter - short hand
+// // Arrow function with single parameter - short hand
+// let sample = txtValue1 => txtValue1;
+// console.log(sample("Hello World 2"));
 
-// let txtValue2 = txtValue2 => txtValue2;
-// console.log(txtValue2("Hello")); // Hello hirun ridenw hirun
+// // sorting array of objects
 
+// const leterList = ["D", "A", "C", "B", "E", "Z", "N", "L", "I", "O"];
+// console.log(leterList);
 
-//shorting arrsy of objects
+// const sortArray = leterList.sort();
+// console.log(sortArray);
 
-// const leterList  = ["D","A","C","B","E","F"];
-// console.log(leterList); // ["D","A","C","B","E","F"]
+// map  - method
 
-// const sortedList = leterList.sort();
-// console.log(sortedList); // ["A","B","C","D","E","F"]
-
-
-//map
 // const salaryList = [50000, 60000, 70000, 80000, 90000];
-// console.log(salaryList); // [50000, 60000, 70000, 80000, 90000]
+// console.log(salaryList);
 
-// const updatedSalaryList = salaryList.map(salary => salary * 2);
-// console.log(updatedSalaryList); // [100000, 120000, 140000, 160000, 180000]
+// // // let doubleSalary = salaryList.map(salary => salary * 2);
+// // console.log(doubleSalary);
 
+// console.log(salaryList.map(salary => salary * 2));
 
-//find method
+//find -method
+// const studentList = [
+//     {name:"Saman", age: 20, gender: "male"},
+//     {name:"Nimal", age: 25, gender: "male"},
+//     {name:"Kamal", age: 30, gender: "male"},
+//     {name:"Sunil", age: 35, gender: "male"},
+//     {name:"Kumara", age: 40, gender: "male"},
+// ]
 
-const studentList = [
-    {name: "saman", age: 20, gender: "male"},
-    {name: "nimal", age: 25, gender: "male"},
-    {name: "kamal", age: 30, gender: "male"},
-    {name: "sunil", age: 35, gender: "male"},
-    {name: "kumar", age: 40, gender: "male"},
-];
-
-const student = studentList.find(student => student.age === 30);
-console.log(student); // {name: "kamal", age: 30, gender: "male"}
-
-
+// let foundStudent = studentList.find(student => student.name == "Kamal");
+// console.log(foundStudent);
 
 
+//JSON - javascript object notation
+//res - response
+fetch("https://jsonplaceholder.typicode.com/posts/").then(res => res.json()).then(data => {
+    console.log(data);
 
+   let tblItems = document.getElementById("tblItems");
+
+   let tblBody = "";
+
+   data.forEach(element => {
+    tblBody += `  <tr> 
+        <td>${element.id}</td>
+        <td>${element.title}</td>
+        <td>${element.body}</td>
+        <td>${element.userId}</td>
+        </tr>`;
+   });
+    tblItems.innerHTML = tblBody;
+});
