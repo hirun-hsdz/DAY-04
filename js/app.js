@@ -117,3 +117,8 @@ let txtValue = txtValue => {
     return txtValue;
 }
 console.log(txtValue("Hello")); // Hello 
+
+//Arrow function with single parameter - short hand
+
+let txtValue2 = txtValue2 => txtValue2;
+console.log(txtValue2("Hello")); // Hello
