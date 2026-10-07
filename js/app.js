@@ -60,23 +60,37 @@
 
 //filter
 
-const productsList = [
-    {name: "bun", inStock: true, price: 100},
-    {name: "bread", inStock: false, price: 200},
-    {name: "milk", inStock: true, price: 300},
-    {name: "egg", inStock: false, price: 400},
-    {name: "cheese", inStock: true, price: 500},
-];
+// const productsList = [
+//     {name: "bun", inStock: true, price: 100},
+//     {name: "bread", inStock: false, price: 200},
+//     {name: "milk", inStock: true, price: 300},
+//     {name: "egg", inStock: false, price: 400},
+//     {name: "cheese", inStock: true, price: 500},
+// ];
 
-conole .log(productsList); 
+// // conole .log(productsList); 
 
-let inStockProducts = productsList.filter(
-    function(product){
-        return productFilter (product)
-    }
-);
-function productFilter(product){
-    return product.inStock === true;
+// // let inStockProducts = productsList.filter(
+// //     function(product){
+// //         return productFilter (product)
+// //     }
+// // );
+// // function productFilter(product){
+// //     return product.inStock === true;
+// // }
+
+// // console.log(inStockProducts); 
+
+
+// let inStockProducts =
+//     productsList.filter(product => product.inStock == true);
+        
+
+//     console.log(inStockProducts);
+
+//1 method
+
+function addNumbers(num1,num2){
+    return num1 + num2;
 }
-
-console.log(inStockProducts); 
+console.log(addNumbers(10,20)); // 30
