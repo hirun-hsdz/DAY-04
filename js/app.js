@@ -36,7 +36,7 @@ console.log(customerList); // ["saman","nimal","kamal"]
 customerList.push("sunil");
 console.log(customerList); // ["saman","nimal","kamal","sunil"]
 
-
+customerList.push=["sunil"];
 
 
 
